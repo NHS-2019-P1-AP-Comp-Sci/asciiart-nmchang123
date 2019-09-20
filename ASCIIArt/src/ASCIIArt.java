@@ -17,11 +17,39 @@
 // YOU CODE HERE :) 
 
 public class ASCIIArt {
-	public static void main (String [] args) {
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
+	public static void claws() {
+		System.out.print("   _(\\/)         (\\/) _");
+	}
+	public static void body() {
+		System.out.print("{-------}");
+	}
+	public static void upperBody() {
+		claws();
+		System.out.println("\n   \\\\ \\\\         // //");
+		System.out.print("  _ \\\\ \\\\ -._.- // // _");
+	}
+	public static void midPart() {
+		System.out.print("\n  \\\\ \\\\ ");
+		body();
+		System.out.println(" // //");
+		System.out.print("   \\\\   ");
+		body();
+		System.out.println("   //");
+		System.out.print("     ===");
+		body();
+		System.out.println("===");
+		System.out.println("  |======{-----}======|");
+	}
+	public static void backLegs() {
+		System.out.println("       //       \\\\");
+		System.out.println("      //         \\\\");
+		System.out.println("      ||         ||");
+		System.out.println("      \\\\         //");
+	}
+	public static void main (String[] args) {
+		upperBody();
+		midPart();
+		backLegs();
+		System.out.println("\nThis is a crab.");
 	}
 }
